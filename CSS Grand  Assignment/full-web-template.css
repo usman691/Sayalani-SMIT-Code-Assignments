@@ -211,10 +211,9 @@ button:hover{
 .info-video{
     flex-grow: 1;
     margin-top: 100px;
-    border: 7px solid black;
     width: 200px;
     height: 343px;
-    margin-right: 461px;
+    
 }
 
 
