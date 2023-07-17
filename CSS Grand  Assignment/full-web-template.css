@@ -10,7 +10,8 @@ body{
     height: 90px;
     width: 100%;
     display: flex;
-    /* position: absolute; */
+    position: fixed;
+    z-index: 9;
 }
 
 .navbar-logo{
@@ -53,6 +54,8 @@ body{
     display: flex;
     background-color: red;
     border-bottom: 7px solid black;
+    flex-wrap: wrap;
+    padding-top: 90px;
 }
 
 .about-us-text{
@@ -115,6 +118,7 @@ button:hover{
     height: 1200px;
     background-color: orange;
     overflow: hidden;
+    flex-wrap: wrap;
 }
 
 .menu-container{
@@ -135,9 +139,10 @@ button:hover{
     font-weight: 800;
     text-align: center;
     position: relative;
+    cursor: pointer;
 }
 
-.menu-item >p{
+.menu-item > p{
     font-size: 18px;
     margin: 20px;
 }
@@ -165,9 +170,9 @@ button:hover{
     color: red;
     height: 30px;
     width: 30px;
-    
     padding: 10px;
 }
+
 
 
                     /* INFO SECTION  */
@@ -178,6 +183,7 @@ button:hover{
     background-color: firebrick;
     display: flex;
     border-top: 7px solid black;
+    flex-wrap: wrap;
 }                    
 
 .info-text{
@@ -192,7 +198,6 @@ button:hover{
     font-weight: 900;
     color: gold;
     margin-left: 140px;
-
 }
 
 .info-text >h1 {
@@ -209,6 +214,122 @@ button:hover{
     border: 7px solid black;
     width: 200px;
     height: 343px;
-    margin-right: 250px;
+    margin-right: 461px;
 }
 
+
+                    /* LOCATONS SECTION */
+
+
+.locations{
+    height: 1100px;
+    background-color: orange;
+    border-top: 7px solid black;
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.locations-container{
+    position: relative;
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-left: 240px;
+    cursor: pointer;
+}
+
+.locations-box{
+    position: relative;
+    margin: 18px;
+    border: 7px solid white;
+    width: 600px;
+}
+
+.locations-box > img{
+    height: 410px;
+    width: 600px;
+}
+
+.locations-box > span{
+    font-size: 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 900;
+    position: absolute;
+    bottom: 190px;
+    right: 250px;
+    opacity: 1;
+    z-index: 5;
+    color: white;
+}
+
+.box-2 > span{
+    right: 225px;
+}
+
+
+
+.locations-box:hover{
+    transform: scale(1.05);
+}
+
+.locations-box > img:hover{
+    opacity: 0.5;
+}
+
+
+                    /* CONTACT SECTION */
+
+
+.contact{
+    height: 500px;
+    background-color: crimson;
+    border-top: 7px solid black;
+    display: flex;
+}                 
+
+.contact > h1{
+    text-align: center;
+    display: block;
+    background-color: white ;
+    font-size: 32px;
+}
+
+input, select{
+    height: 35px;
+    width: 200px;
+    border: 2px solid black;
+    margin: 5px;
+}                    
+
+textarea{
+    border: 2px solid black;
+    margin 5px;
+}
+
+.contact-text{
+    text-align: center;
+    width: 300px;
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 800;
+    padding-left: 300px;
+    margin-right: 400px;
+}
+
+.contact-form{
+    display: flex;
+    justify-content: right;
+    flex-direction: column;
+    padding-top: 50px;
+}
+
+button{
+    width: 90px;
+    height: 50px;
+    margin: 10px;
+    color: yellow;
+    background-color: transparent;
+    border: 2px solid black;
+
+
+}
